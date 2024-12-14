@@ -43,7 +43,7 @@ class ModelTrainer:
 
         trainer = Trainer(model=model, args=trainer_args,
                   tokenizer=tokenizer, data_collator=data_collator,
-                  train_dataset=dataset["test"], 
+                  train_dataset=dataset["train"], 
                   eval_dataset=dataset["validation"])
         
         trainer.train()
